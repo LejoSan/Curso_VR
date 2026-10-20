@@ -603,8 +603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31cf8674692b6424ea4a8016b14867cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::miprimerscript
-  nombre: Nacho
-  Edad: 30
+  distancia: 10
+  tiempo: 30
 --- !u!4 &1907886139
 Transform:
   m_ObjectHideFlags: 0
