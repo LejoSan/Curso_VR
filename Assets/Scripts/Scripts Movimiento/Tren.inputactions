@@ -1,0 +1,85 @@
+{
+    "version": 1,
+    "name": "Tren",
+    "maps": [
+        {
+            "name": "Movimiento",
+            "id": "6ef9fea3-eaed-4f71-b4e4-6e61479825a1",
+            "actions": [
+                {
+                    "name": "Adelante",
+                    "type": "Value",
+                    "id": "0a9a1af4-db7b-4cf1-874f-828b97f61a9c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "68b16dc5-527f-43f9-9d4c-6708138bd32e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Adelante",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "85d85f41-160c-4b4a-8428-7691010c6272",
+                    "path": "<DualShockGamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Adelante",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5315a880-a4ec-4099-813d-dc47f5321176",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Adelante",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Atras",
+            "id": "7f0094fe-49ab-4748-8b41-b7f1d5ed32d5",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "89fdc68b-d8c3-4fe0-a6f4-38f0fbb5e712",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f3b3281a-25a4-4a48-9882-80278edc8801",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

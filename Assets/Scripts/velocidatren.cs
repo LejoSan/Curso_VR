@@ -2,22 +2,20 @@ using UnityEngine;
 
 public class velocidatren : MonoBehaviour
 {
-    float velocidad = 50f;
+    //float velocidad = 50f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        while (velocidad < 100f)
+        // Bucle Padre: Recorre 3 trenes en la estación
+        for (int i = 1; i <= 3; i++)
         {
-            velocidad += 20f;
+            Debug.Log("Comienza la inspección del Tren Nº " + i);
 
-            Debug.Log("Velocidad del tren: " + velocidad + " km/h");
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            // Bucle Hijo: Recorre 4 vagones por cada tren
+            for (int j = 1; j <= 4; j++)
+            {
+                Debug.Log("  -> Vagón " + j + " del Tren " + i + " verificado");
+            }
         }
     }
 }
