@@ -5833,8 +5833,8 @@ GameObject:
   - component: {fileID: 900753654}
   - component: {fileID: 900753653}
   - component: {fileID: 900753652}
-  - component: {fileID: 900753657}
   - component: {fileID: 900753658}
+  - component: {fileID: 900753659}
   m_Layer: 0
   m_Name: Pomo_Palanca
   m_TagString: Untagged
@@ -5978,6 +5978,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers:
+  - {fileID: 900753659}
   - {fileID: 900753658}
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
@@ -6090,29 +6091,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900753650}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &900753657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900753650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
-  m_PermittedDisplacementAxes: 1
-  m_ConstrainedAxisDisplacementMode: 0
-  m_TwoHandedRotationMode: 1
-  m_AllowOneHandedScaling: 0
-  m_AllowTwoHandedScaling: 0
-  m_OneHandedScaleSpeed: 0.5
-  m_ThresholdMoveRatioForScale: 0.05
-  m_ClampScaling: 0
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.25
 --- !u!114 &900753658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6128,6 +6106,29 @@ MonoBehaviour:
   basePalanca: {fileID: 1376353256}
   xMin: 0
   xMax: 0.17
+--- !u!114 &900753659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900753650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: 7
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 1
+  m_AllowTwoHandedScaling: 0
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 0.25
+  m_MaximumScaleRatio: 2
+  m_ScaleMultiplier: 0.25
 --- !u!1 &901004544
 GameObject:
   m_ObjectHideFlags: 0
@@ -10482,7 +10483,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1376353256}
-  - component: {fileID: 1376353257}
   - component: {fileID: 1376353258}
   m_Layer: 0
   m_Name: BASE PALANCA
@@ -10507,25 +10507,6 @@ Transform:
   - {fileID: 900753651}
   m_Father: {fileID: 1783995896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1376353257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376353255}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcba9b1ddf4a127488ff9169a78cddfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PalancaVR
-  basePalanca: {fileID: 1376353256}
-  pomoPalanca: {fileID: 900753651}
-  interactable: {fileID: 900753652}
-  controladorTren: {fileID: 1066457569}
-  posicion0: 0
-  posicion1: 0.072
-  posicion2: 0.1686
 --- !u!114 &1376353258
 MonoBehaviour:
   m_ObjectHideFlags: 0
