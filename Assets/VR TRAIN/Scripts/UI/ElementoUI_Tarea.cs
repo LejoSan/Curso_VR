@@ -15,6 +15,7 @@ public class ElementoUI_Tarea : MonoBehaviour
     public Color colorPendiente = Color.white;
     public Color colorCompletado = Color.green;
 
+
     // OnEnable se ejecuta automáticamente cada vez que esta fila se activa en pantalla
     private void OnEnable()
     {

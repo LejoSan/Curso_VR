@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "TareaSO", menuName = "Scriptable Objects/TareaSO")]
+
 public class TareaSO : ScriptableObject
 {
     public string idTarea;

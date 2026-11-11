@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuertaTransicionVR
   efectoOutline: {fileID: 16624088}
   nombreEscenaDestino: Train_2
-  estiloTransicion: {fileID: 11400000, guid: 18074b42923cc6e479c3916d7aa6bee7, type: 2}
+  estiloTransicion: {fileID: 11400000, guid: a922dd9fa1314e0439a60b811367123d, type: 2}
 --- !u!114 &16624087
 MonoBehaviour:
   m_ObjectHideFlags: 0
