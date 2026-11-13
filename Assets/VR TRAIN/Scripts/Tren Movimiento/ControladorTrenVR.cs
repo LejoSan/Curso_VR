@@ -19,11 +19,10 @@ public class ControladorTrenVR : MonoBehaviour
 
     [Header("Referencias de Cabina")]
     public ControladorPuertaVR controladorPuerta;
-    public AudioSource audioAlarmaPuerta;
     public AudioSource audioMotorTren;
 
     [Header("Transición de Escena")]
-    public string nombreEscenaDestino = "Escena_03";
+    public string nombreEscenaDestino = "Train_3";
     public TransitionEffect estiloTransicion;
 
     public TareaSO tareaAcelerarTren;
@@ -42,11 +41,6 @@ public class ControladorTrenVR : MonoBehaviour
         {
             posicionPalanca = 0;
             velocidadObjetivo = 0.0f;
-
-            if (audioAlarmaPuerta != null && audioAlarmaPuerta.isPlaying == false)
-            {
-                audioAlarmaPuerta.Play();
-            }
 
             if (audioMotorTren != null)
             {
@@ -102,10 +96,6 @@ public class ControladorTrenVR : MonoBehaviour
                 posicionPalanca = 0;
                 velocidadObjetivo = 0.0f;
 
-                if (audioAlarmaPuerta != null && audioAlarmaPuerta.isPlaying == false)
-                {
-                    audioAlarmaPuerta.Play();
-                }
             }
         }
 
@@ -131,10 +121,6 @@ public class ControladorTrenVR : MonoBehaviour
                 posicionPalanca = 0;
                 velocidadObjetivo = 0.0f;
 
-                if (audioAlarmaPuerta != null && audioAlarmaPuerta.isPlaying == false)
-                {
-                    audioAlarmaPuerta.Play();
-                }
             }
         }
     }
